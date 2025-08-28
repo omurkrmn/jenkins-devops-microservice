@@ -1,0 +1,4 @@
+git add .
+$commitMessage = "Auto commit on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+git commit -m $commitMessage
+git push
