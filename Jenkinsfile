@@ -46,4 +46,12 @@ pipeline {
 			echo 'I run when you fail'
 		}
 	}	
+
+
+	stage('Validate') {
+            steps {
+                script {
+                    bat 'ls -la'
+                }
+            }
 }
