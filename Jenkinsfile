@@ -7,21 +7,17 @@ pipeline {
 			}
 		}
 			
-
-		stage {
-			stage('Test') {
-				steps {
-					echo "Test"
-				}
+		stage('Test') {
+			steps {
+				echo "Test"
 			}
 		}
-
-		stage {
-			stage('Integration Test') {
-				steps {
-					echo "Integration Test"
-				}
+	
+		stage('Integration Test') {
+			steps {
+				echo "Integration Test"
 			}
 		}
+		
 	}	
 }
