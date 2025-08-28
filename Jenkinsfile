@@ -32,6 +32,13 @@ pipeline {
 				echo "Integration Test"
 			}
 		}
+		stage('Validate') {
+            steps {
+                script {
+                    bat 'ls -la'
+                }
+            }
+		}
 		
 	} 
 
@@ -48,10 +55,5 @@ pipeline {
 	}	
 
 
-	stage('Validate') {
-            steps {
-                script {
-                    bat 'ls -la'
-                }
-            }
+
 }
